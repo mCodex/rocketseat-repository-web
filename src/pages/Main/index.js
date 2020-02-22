@@ -1,7 +1,9 @@
 import React, { memo } from 'react';
 
+import { Title } from './styles';
+
 const Main = () => {
-    return <p>Hello World</p>;
+    return <Title>Hello World</Title>;
 };
 
 export default memo(Main);

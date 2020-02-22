@@ -4,7 +4,7 @@ Project bootstraped with [create-react-app](https://github.com/facebook/create-r
 
 ## 📚 Libraries:
 
-* [Styled-Components](https://styled-components.com/)
+* [styled-components](https://styled-components.com/)
 
 ## 📦 Installation
 
