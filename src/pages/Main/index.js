@@ -13,7 +13,7 @@ const Main = () => {
     useEffect(() => {
         const repositoriesFromLS = localStorage.getItem('repositories');
 
-        if (repositories) {
+        if (repositoriesFromLS) {
             setRepositories(JSON.parse(repositoriesFromLS));
         }
     }, []);
