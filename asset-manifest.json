@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/rocketseat-repository-web/static/js/main.d5f467e9.chunk.js",
-    "main.js.map": "/rocketseat-repository-web/static/js/main.d5f467e9.chunk.js.map",
+    "main.js": "/rocketseat-repository-web/static/js/main.3eae8a20.chunk.js",
+    "main.js.map": "/rocketseat-repository-web/static/js/main.3eae8a20.chunk.js.map",
     "runtime-main.js": "/rocketseat-repository-web/static/js/runtime-main.0fd25bea.js",
     "runtime-main.js.map": "/rocketseat-repository-web/static/js/runtime-main.0fd25bea.js.map",
     "static/js/2.576d69b5.chunk.js": "/rocketseat-repository-web/static/js/2.576d69b5.chunk.js",
     "static/js/2.576d69b5.chunk.js.map": "/rocketseat-repository-web/static/js/2.576d69b5.chunk.js.map",
     "index.html": "/rocketseat-repository-web/index.html",
-    "precache-manifest.939df8ddb4ada664bb0a3ac90be856ee.js": "/rocketseat-repository-web/precache-manifest.939df8ddb4ada664bb0a3ac90be856ee.js",
+    "precache-manifest.cad7fc062b3355e32e0302a900c00913.js": "/rocketseat-repository-web/precache-manifest.cad7fc062b3355e32e0302a900c00913.js",
     "service-worker.js": "/rocketseat-repository-web/service-worker.js",
     "static/js/2.576d69b5.chunk.js.LICENSE.txt": "/rocketseat-repository-web/static/js/2.576d69b5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0fd25bea.js",
     "static/js/2.576d69b5.chunk.js",
-    "static/js/main.d5f467e9.chunk.js"
+    "static/js/main.3eae8a20.chunk.js"
   ]
 }
