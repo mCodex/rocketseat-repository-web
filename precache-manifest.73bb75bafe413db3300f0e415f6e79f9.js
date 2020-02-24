@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a658eb3704e9092ea3a59174c86db42e",
+    "revision": "0208edf9d2b0d888f280f96d16069e68",
     "url": "/rocketseat-repository-web/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rocketseat-repository-web/static/js/2.1a6ab78e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5996957b0eefd77436e5",
-    "url": "/rocketseat-repository-web/static/js/main.740d63ef.chunk.js"
+    "revision": "e57a4e695626bc4fabae",
+    "url": "/rocketseat-repository-web/static/js/main.ee8fd027.chunk.js"
   },
   {
     "revision": "fa71a339152a4d4bef55",
