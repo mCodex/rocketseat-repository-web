@@ -1,7 +1,7 @@
 import React, { memo, useState, useEffect } from 'react';
 import { FaGithubAlt, FaPlus, FaSpinner } from 'react-icons/fa';
 
-import api from '../../services/api';
+import api from '~/services/api';
 
 import { Container, Form, SubmitButton, List } from './styles';
 
