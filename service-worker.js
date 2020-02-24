@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/rocketseat-repository-web/precache-manifest.73bb75bafe413db3300f0e415f6e79f9.js"
+  "/rocketseat-repository-web/precache-manifest.8ff0258b2efea39e7f5c87f1fdabb9cf.js"
 );
 
 self.addEventListener('message', (event) => {
