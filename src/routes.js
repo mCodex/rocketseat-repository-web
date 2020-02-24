@@ -6,10 +6,10 @@ import Repository from './pages/Repository';
 
 export default function() {
     return (
-        <BrowserRouter basename="/rocketseat-repository-web">
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Switch>
-                <Route path="/" component={Main} />
-                <Route path="repository" component={Repository} />
+                <Route path="/" exact component={Main} />
+                <Route path="/repository/:repository" component={Repository} />
             </Switch>
         </BrowserRouter>
     );
