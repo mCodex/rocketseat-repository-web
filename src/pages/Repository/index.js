@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from 'react';
+import React, { memo, useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -14,7 +14,7 @@ const Repositories = ({ match }) => {
 
     const repoName = decodeURIComponent(match.params.repository);
 
-    const loadDataFromAPI = async () => {
+    const loadDataFromAPI = useCallback(async () => {
         const [repositoryData, issuesData] = await Promise.all([
             api.get(`/repos/${repoName}`),
             api.get(`/repos/${repoName}/issues`, {
@@ -26,11 +26,11 @@ const Repositories = ({ match }) => {
         ]);
         setRepository({ data: repositoryData.data, issues: issuesData.data });
         return setIsLoading(false);
-    };
+    }, [repoName]);
 
     useEffect(() => {
         loadDataFromAPI();
-    }, []);
+    }, [loadDataFromAPI]);
 
     if (loading) {
         return <Loading>Carregando...</Loading>;
@@ -57,7 +57,11 @@ const Repositories = ({ match }) => {
                         />
                         <div>
                             <strong>
-                                <a href={issue.html_url} target="_blank">
+                                <a
+                                    href={issue.html_url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     {issue.title}
                                 </a>
                                 {issue.labels.map(label => (

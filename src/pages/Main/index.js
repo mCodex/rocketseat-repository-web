@@ -2,11 +2,12 @@ import React, { memo, useState, useEffect } from 'react';
 import { FaGithubAlt, FaPlus, FaSpinner } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+import { toast } from 'react-toastify';
 import Container from '~/components/Container';
 
 import api from '~/services/api';
 
-import { Form, SubmitButton, List } from './styles';
+import { Form, SubmitButton, List, Header } from './styles';
 
 const Main = () => {
     const [newRepo, setNewRepo] = useState('');
@@ -30,15 +31,25 @@ const Main = () => {
     const handleSubmit = async e => {
         e.preventDefault();
         setLoading(true);
-        const response = await api.get(`/repos/${newRepo}`);
 
-        const data = {
-            name: response.data.full_name,
-        };
+        try {
+            const response = await api.get(`/repos/${newRepo}`);
 
-        setRepositories(prevState => [...prevState, data]);
-        setNewRepo('');
-        return setLoading(false);
+            const data = {
+                name: response.data.full_name,
+            };
+
+            setRepositories(prevState => [...prevState, data]);
+            setNewRepo('');
+
+            toast.success('Repositório adicionado com sucesso 🎉');
+        } catch (ex) {
+            return toast.error(
+                'Verifique os dados inseridos e tente novamente 😉'
+            );
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -47,6 +58,13 @@ const Main = () => {
                 <FaGithubAlt />
                 Repositórios
             </h1>
+
+            <Header>
+                Adicione um novo repositório utilizando o formato{' '}
+                <code>github_user/repo_name</code> (por exemplo,{' '}
+                <code>facebook/react</code>)
+            </Header>
+
             <Form onSubmit={handleSubmit}>
                 <input
                     type="text"

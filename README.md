@@ -1,8 +1,8 @@
 # Rocketseat Repository Web
 
-Project bootstraped with [create-react-app](https://github.com/facebook/create-react-app).
+A project which you can a repo name using this format: `github_user/repo_name` (i.e [facebook/react](http://github.com/facebook/react)) and then you can see its details which lists opened issues for that repository.
 
-Deployed using [gh-pages](https://www.npmjs.com/package/gh-pages)
+Project bootstraped with [create-react-app](https://github.com/facebook/create-react-app). Deployed using [gh-pages](https://www.npmjs.com/package/gh-pages).
 
 ## 👨‍💻 Demo:
 
